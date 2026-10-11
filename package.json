@@ -1,0 +1,23 @@
+{
+  "name": "team-galaxy-website",
+  "version": "1.0.0",
+  "description": "Official website for Team Galaxy - FGC Ikom Robotics & AI (FIRST Tech Challenge Nigeria Champions)",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "serve": "node server.js",
+    "build": "echo \"Static site ready for deployment\""
+  },
+  "keywords": [
+    "robotics",
+    "first-tech-challenge",
+    "ftc",
+    "team-galaxy",
+    "fgc-ikom",
+    "stem",
+    "nigeria"
+  ],
+  "author": "Team Galaxy",
+  "license": "ISC"
+}
