@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team Galaxy — Federal Government College, Ikom | National Robotics Champions</title>
-  <meta name="description" content="Official sponsorship requisition for Team Galaxy, FTC Nigeria Championship Design Award Winners from Federal Government College, Ikom, Cross River State.">
+  <title>Team Galaxy 21131 — Federal Government College, Ikom | FTC Nigeria Champions</title>
+  <meta name="description" content="Official sponsorship requisition and documentary dossier for Team Galaxy 21131, FTC Nigeria Championship Design Award Winners from Federal Government College, Ikom, Cross River State.">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Team Galaxy | FGC Ikom Robotics — National Champions">
+  <meta property="og:title" content="Team Galaxy 21131 | FGC Ikom Robotics — National Champions">
   <meta property="og:description" content="From cardboard prototypes to National Champions. Sponsoring high-school robotics engineers at FGC Ikom.">
   <meta property="og:image" content="assets/images/photo-2.jpg">
   <meta property="og:type" content="website">
@@ -50,19 +50,21 @@
 </head>
 <body class="bg-[#07080c] text-zinc-200 font-sans antialiased selection:bg-white selection:text-black">
 
-  <!-- Top Dispatch Banner: Concrete deadline & application window -->
-  <div class="border-b border-zinc-800/80 bg-[#0c0e15] text-xs text-zinc-300 py-2 px-4">
-    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2.5">
-      <div class="flex items-center gap-2">
+  <!-- Top Dispatch Banner: Concrete Season Status (No Artificial Deadline) -->
+  <div class="border-b border-zinc-800/80 bg-[#0c0e15] text-xs text-zinc-300 py-2.5 px-4">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5">
         <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span class="font-mono text-zinc-400 uppercase tracking-wider text-[11px]">Sponsorship Window Active</span>
+        <span class="font-mono text-zinc-300 uppercase tracking-wider text-[11px] font-semibold">FTC Team 21131 Active</span>
         <span class="text-zinc-600">|</span>
-        <span class="text-zinc-300">Application Deadline: <strong class="text-white font-semibold">Monday, 12th October</strong></span>
+        <span class="text-zinc-300">2025/2026 Equipment Requisition &bull; <strong class="text-white font-medium">Federal Government College, Ikom</strong></span>
       </div>
       <div class="flex items-center gap-4 text-zinc-400 font-mono text-[11px]">
-        <span>FTC Nigeria &bull; FGC Ikom</span>
         <a href="#wishlist" class="text-white hover:underline inline-flex items-center gap-1 font-sans">
           Hardware Requisition <i data-lucide="arrow-down-right" class="w-3.5 h-3.5"></i>
+        </a>
+        <a href="#contact" class="text-amber-400 hover:underline inline-flex items-center gap-1 font-sans font-medium">
+          Contact Mentors <i data-lucide="phone" class="w-3 h-3"></i>
         </a>
       </div>
     </div>
@@ -79,7 +81,7 @@
         </div>
         <div>
           <div class="flex items-center gap-2">
-            <span class="font-bold text-base tracking-tight text-white group-hover:text-amber-400 transition-colors">TEAM GALAXY</span>
+            <span class="font-bold text-base tracking-tight text-white group-hover:text-amber-400 transition-colors">TEAM GALAXY <span class="font-mono text-xs text-amber-400 font-semibold">21131</span></span>
             <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-800 text-zinc-300 font-semibold border border-zinc-700">FGC IKOM</span>
           </div>
           <p class="text-[10px] text-zinc-400 font-mono">FIRST Tech Challenge &bull; Cross River State</p>
@@ -87,15 +89,22 @@
       </a>
 
       <!-- Desktop Links -->
-      <nav class="hidden md:flex items-center gap-6 text-xs font-semibold uppercase tracking-wider text-zinc-300">
-        <a href="#story" class="hover:text-white transition-colors">Story & Proof</a>
+      <nav class="hidden md:flex items-center gap-5 text-xs font-semibold uppercase tracking-wider text-zinc-300">
+        <a href="#story" class="hover:text-white transition-colors">Story</a>
         <a href="#wishlist" class="hover:text-white transition-colors">Hardware Needs</a>
+        <a href="#case-study" class="hover:text-white transition-colors">Why We Won</a>
+        <a href="#archive" class="hover:text-white transition-colors">Archive</a>
         <a href="#tiers" class="hover:text-white transition-colors">Sponsorship</a>
-        <a href="#contact" class="hover:text-white transition-colors">Bank & Contact</a>
+        <a href="#contact" class="hover:text-white transition-colors">Bursary & Mentors</a>
       </nav>
 
       <!-- Action Button -->
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-2.5">
+        <button onclick="openWhatsAppChat('jude')" class="hidden sm:inline-flex action-btn px-3 py-2 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-semibold text-xs transition-all items-center gap-1.5">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+          <span>WhatsApp</span>
+        </button>
+
         <button onclick="openPledgeModal()" class="action-btn px-4 py-2 rounded-lg bg-white hover:bg-zinc-200 text-black font-semibold text-xs uppercase tracking-wider transition-all flex items-center gap-1.5">
           <i data-lucide="handshake" class="w-3.5 h-3.5"></i>
           <span>Sponsor Hardware</span>
@@ -113,14 +122,17 @@
     <div id="mobile-menu" class="hidden md:hidden border-b border-zinc-800 bg-[#0c0e15] px-5 py-4 space-y-3 text-xs font-semibold uppercase tracking-wider">
       <a href="#story" class="block text-zinc-300 hover:text-white py-1">Story & Proof</a>
       <a href="#wishlist" class="block text-zinc-300 hover:text-white py-1">Hardware Needs</a>
-      <a href="#tiers" class="block text-zinc-300 hover:text-white py-1">Sponsorship Tiers</a>
-      <a href="#contact" class="block text-zinc-300 hover:text-white py-1">Bank & Contact Details</a>
+      <a href="#case-study" class="block text-zinc-300 hover:text-white py-1">Why We Won (Case Study)</a>
+      <a href="#archive" class="block text-zinc-300 hover:text-white py-1">Photo Archive</a>
+      <a href="#tiers" class="block text-zinc-300 hover:text-white py-1">Sponsorship Packages</a>
+      <a href="#governance" class="block text-zinc-300 hover:text-white py-1">School Governance & X</a>
+      <a href="#contact" class="block text-amber-400 hover:text-amber-300 py-1">Bursary & Mentors</a>
     </div>
   </header>
 
   <main>
 
-    <!-- SECTION 1: HERO (Punchy, Proportional, High-Impact) -->
+    <!-- SECTION 1: HERO (High-Impact, Proportional & Human-Crafted) -->
     <section class="py-12 sm:py-16 border-b border-zinc-800/80">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
@@ -131,10 +143,10 @@
             
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-400 text-xs font-medium">
               <i data-lucide="award" class="w-3.5 h-3.5"></i>
-              <span>FTC Nigeria National Design Award Winners • 2024–2025</span>
+              <span>FTC Nigeria National Design Award Winners • Team 21131</span>
             </div>
 
-            <h1 class="text-3xl sm:text-5xl lg:text-[54px] font-extrabold text-white tracking-tight leading-[1.12]">
+            <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold text-white tracking-tight leading-[1.12]">
               From Cardboard Prototypes to National Champions.
             </h1>
 
@@ -143,7 +155,7 @@
             </p>
 
             <p class="text-sm text-zinc-400 leading-relaxed">
-              Now, their aging equipment has reached its limit. We are raising <strong class="text-white">₦3,750,000 (~$2,500 USD)</strong> to replace worn motors, controllers, and battery packs before the 2025/2026 championship kickoff.
+              Now, their aging equipment has reached its limit. We are raising <strong class="text-white">₦3,750,000 (~$2,500 USD)</strong> to replace worn motors, controllers, and battery packs for the 2025/2026 competition season.
             </p>
 
             <!-- CTAs -->
@@ -157,10 +169,20 @@
                 <i data-lucide="list" class="w-4 h-4 text-zinc-400"></i>
                 <span>View Hardware List</span>
               </a>
+
+              <button onclick="openWhatsAppChat('jude')" class="action-btn px-5 py-3 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-medium text-xs uppercase tracking-wider transition-all flex items-center gap-2">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Chat on WhatsApp</span>
+              </button>
             </div>
 
-            <!-- Compact Metrics Grid -->
+            <!-- Compact Metrics Grid (4 Key Team Metrics) -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-zinc-800/80">
+              <div>
+                <div class="font-extrabold text-2xl font-mono text-amber-400">21131</div>
+                <div class="text-[11px] font-mono text-zinc-400 uppercase mt-0.5">FTC Team Number</div>
+                <div class="text-[10px] text-zinc-500">FIRST Tech Challenge</div>
+              </div>
               <div>
                 <div class="font-extrabold text-2xl text-white">01</div>
                 <div class="text-[11px] font-mono text-zinc-400 uppercase mt-0.5">FTC Design Award</div>
@@ -175,11 +197,6 @@
                 <div class="font-extrabold text-2xl text-white">12</div>
                 <div class="text-[11px] font-mono text-zinc-400 uppercase mt-0.5">Student Builders</div>
                 <div class="text-[10px] text-zinc-500">FGC Ikom Campus</div>
-              </div>
-              <div>
-                <div class="font-extrabold text-2xl text-amber-400">Oct 12</div>
-                <div class="text-[11px] font-mono text-zinc-400 uppercase mt-0.5">Deadline</div>
-                <div class="text-[10px] text-zinc-500">Kit Application</div>
               </div>
             </div>
 
@@ -224,7 +241,7 @@
             <!-- Institutional Guarantee Box -->
             <div class="p-3 rounded-lg bg-zinc-900/60 border border-zinc-800 font-mono text-[11px] text-zinc-400 flex items-center gap-2.5">
               <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
-              <span>Managed directly under Federal Government College, Ikom school bursary oversight.</span>
+              <span>Direct oversight under Federal Government College, Ikom (Federal Ministry of Education).</span>
             </div>
 
           </div>
@@ -234,7 +251,7 @@
       </div>
     </section>
 
-    <!-- SECTION 2: HARDWARE REQUISITION (Compact & Itemized) -->
+    <!-- SECTION 2: HARDWARE REQUISITION & BOM LEDGER -->
     <section id="wishlist" class="py-12 sm:py-16 border-b border-zinc-800/80 bg-[#090b11]">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
@@ -249,7 +266,7 @@
             </p>
           </div>
           
-          <!-- Campaign Target Card (Accurate ₦0 Raised / 100% Needed) -->
+          <!-- Campaign Target Card -->
           <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-xl min-w-[280px]">
             <div class="flex items-center justify-between">
               <span class="text-[10px] font-mono text-zinc-400 uppercase tracking-wider">Total Requisition Goal</span>
@@ -281,122 +298,157 @@
             </thead>
             <tbody class="divide-y divide-zinc-800/60">
               
-              <!-- Item 1 -->
-              <tr class="hover:bg-zinc-900/40 transition-colors">
-                <td class="py-3.5 px-3 font-mono text-zinc-400">REV-HUB-01</td>
+              <!-- Row 1 -->
+              <tr class="hover:bg-zinc-900/50 transition-colors">
+                <td class="py-3.5 px-3 font-mono text-zinc-500">BOM-01</td>
                 <td class="py-3.5 px-3">
-                  <div class="font-semibold text-white">REV Robotics Control & Expansion Hub</div>
-                  <div class="text-[11px] text-zinc-400">Android Processor + Motor Driver Board</div>
+                  <div class="font-semibold text-white text-sm">Core Hex & UltraPlanetary Drivetrain Motors</div>
+                  <div class="text-[11px] text-zinc-400">4 units • High-torque planetary gearboxes for competition chassis</div>
                 </td>
-                <td class="py-3.5 px-3 text-zinc-300">2023 unit suffers bus disconnects during match vibrations.</td>
                 <td class="py-3.5 px-3">
-                  <span class="px-2 py-0.5 text-[9px] font-mono uppercase font-bold rounded bg-red-950/60 text-red-400 border border-red-800/80">Critical</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-red-950/80 text-red-400 border border-red-800/60">
+                    Worn Commutators
+                  </span>
                 </td>
+                <td class="py-3.5 px-3 font-mono text-amber-400 font-medium">Critical</td>
                 <td class="py-3.5 px-3 text-right font-mono font-medium text-white">
-                  ₦870,000 <span class="text-zinc-500">($580)</span>
+                  ₦450,000 <span class="text-zinc-500">($300)</span>
                 </td>
                 <td class="py-3.5 px-3 text-right">
-                  <button onclick="selectPledgeItem('REV Control & Expansion Hub', '₦870,000 / $580')" class="action-btn px-2.5 py-1 rounded bg-zinc-800 hover:bg-white hover:text-black text-zinc-200 font-mono text-[10px] font-semibold transition-all">
+                  <button onclick="selectPledgeItem('Core Hex & UltraPlanetary Motors', '₦450,000 / $300')" class="action-btn px-2.5 py-1 rounded bg-zinc-800 hover:bg-white hover:text-black text-zinc-200 font-mono text-[10px] font-semibold transition-all">
                     Sponsor
                   </button>
                 </td>
               </tr>
 
-              <!-- Item 2 -->
-              <tr class="hover:bg-zinc-900/40 transition-colors">
-                <td class="py-3.5 px-3 font-mono text-zinc-400">MTR-ULT-04</td>
+              <!-- Row 2 -->
+              <tr class="hover:bg-zinc-900/50 transition-colors">
+                <td class="py-3.5 px-3 font-mono text-zinc-500">BOM-02</td>
                 <td class="py-3.5 px-3">
-                  <div class="font-semibold text-white">UltraPlanetary HD Gearmotors & Encoders (Set of 4)</div>
-                  <div class="text-[11px] text-zinc-400">Planetary motors for autonomous lift & scoring arm</div>
+                  <div class="font-semibold text-white text-sm">REV Robotics Expansion & Control Hubs</div>
+                  <div class="text-[11px] text-zinc-400">Integrated motor controllers, I2C sensor bus, and Wi-Fi tele-op link</div>
                 </td>
-                <td class="py-3.5 px-3 text-zinc-300">Internal planetary gear teeth stripped on lift axis.</td>
                 <td class="py-3.5 px-3">
-                  <span class="px-2 py-0.5 text-[9px] font-mono uppercase font-bold rounded bg-amber-950/60 text-amber-400 border border-amber-800/80">High</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-red-950/80 text-red-400 border border-red-800/60">
+                    Intermittent USB-C Port
+                  </span>
                 </td>
+                <td class="py-3.5 px-3 font-mono text-amber-400 font-medium">Critical</td>
                 <td class="py-3.5 px-3 text-right font-mono font-medium text-white">
-                  ₦630,000 <span class="text-zinc-500">($420)</span>
+                  ₦650,000 <span class="text-zinc-500">($435)</span>
                 </td>
                 <td class="py-3.5 px-3 text-right">
-                  <button onclick="selectPledgeItem('UltraPlanetary HD Gearmotors', '₦630,000 / $420')" class="action-btn px-2.5 py-1 rounded bg-zinc-800 hover:bg-white hover:text-black text-zinc-200 font-mono text-[10px] font-semibold transition-all">
+                  <button onclick="selectPledgeItem('REV Control Hub & Expansion Unit', '₦650,000 / $435')" class="action-btn px-2.5 py-1 rounded bg-zinc-800 hover:bg-white hover:text-black text-zinc-200 font-mono text-[10px] font-semibold transition-all">
                     Sponsor
                   </button>
                 </td>
               </tr>
 
-              <!-- Item 3 -->
-              <tr class="hover:bg-zinc-900/40 transition-colors">
-                <td class="py-3.5 px-3 font-mono text-zinc-400">CHAS-MEC-01</td>
+              <!-- Row 3 -->
+              <tr class="hover:bg-zinc-900/50 transition-colors">
+                <td class="py-3.5 px-3 font-mono text-zinc-500">BOM-03</td>
                 <td class="py-3.5 px-3">
-                  <div class="font-semibold text-white">Mecanum Omnidirectional Drivetrain Kit</div>
-                  <div class="text-[11px] text-zinc-400">Aluminum chassis channels + 4x 96mm roller wheels</div>
+                  <div class="font-semibold text-white text-sm">Computer Vision & AprilTag Camera Module</div>
+                  <div class="text-[11px] text-zinc-400">Wide-angle sensor for 30-second autonomous field navigation & target lock</div>
                 </td>
-                <td class="py-3.5 px-3 text-zinc-300">Bent wheel bracket axles and worn polyurethane rollers.</td>
                 <td class="py-3.5 px-3">
-                  <span class="px-2 py-0.5 text-[9px] font-mono uppercase font-bold rounded bg-amber-950/60 text-amber-400 border border-amber-800/80">High</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-amber-950/80 text-amber-400 border border-amber-800/60">
+                    Missing 2025 Standard
+                  </span>
                 </td>
+                <td class="py-3.5 px-3 font-mono text-zinc-300">High</td>
                 <td class="py-3.5 px-3 text-right font-mono font-medium text-white">
-                  ₦525,000 <span class="text-zinc-500">($350)</span>
+                  ₦250,000 <span class="text-zinc-500">($165)</span>
                 </td>
                 <td class="py-3.5 px-3 text-right">
-                  <button onclick="selectPledgeItem('Mecanum Drivetrain Platform', '₦525,000 / $350')" class="action-btn px-2.5 py-1 rounded bg-zinc-800 hover:bg-white hover:text-black text-zinc-200 font-mono text-[10px] font-semibold transition-all">
+                  <button onclick="selectPledgeItem('Computer Vision & AprilTag Camera', '₦250,000 / $165')" class="action-btn px-2.5 py-1 rounded bg-zinc-800 hover:bg-white hover:text-black text-zinc-200 font-mono text-[10px] font-semibold transition-all">
                     Sponsor
                   </button>
                 </td>
               </tr>
 
-              <!-- Item 4 -->
-              <tr class="hover:bg-zinc-900/40 transition-colors">
-                <td class="py-3.5 px-3 font-mono text-zinc-400">PWR-BAT-04</td>
+              <!-- Row 4 -->
+              <tr class="hover:bg-zinc-900/50 transition-colors">
+                <td class="py-3.5 px-3 font-mono text-zinc-500">BOM-04</td>
                 <td class="py-3.5 px-3">
-                  <div class="font-semibold text-white">12V 3000mAh NiMH Battery Packs & Smart Charger</div>
-                  <div class="text-[11px] text-zinc-400">Match power modules with XT30 connectors</div>
+                  <div class="font-semibold text-white text-sm">96mm Mecanum Wheels & Vector Drive Chassis</div>
+                  <div class="text-[11px] text-zinc-400">Full 4-wheel set allowing omnidirectional strafing on tile arena</div>
                 </td>
-                <td class="py-3.5 px-3 text-zinc-300">Old batteries experience rapid brownouts under 15A stall.</td>
                 <td class="py-3.5 px-3">
-                  <span class="px-2 py-0.5 text-[9px] font-mono uppercase font-bold rounded bg-blue-950/60 text-blue-400 border border-blue-800/80">Essential</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-red-950/80 text-red-400 border border-red-800/60">
+                    Fractured Rollers
+                  </span>
                 </td>
+                <td class="py-3.5 px-3 font-mono text-amber-400 font-medium">Critical</td>
                 <td class="py-3.5 px-3 text-right font-mono font-medium text-white">
-                  ₦390,000 <span class="text-zinc-500">($260)</span>
+                  ₦400,000 <span class="text-zinc-500">($270)</span>
                 </td>
                 <td class="py-3.5 px-3 text-right">
-                  <button onclick="selectPledgeItem('NiMH Batteries & Charger', '₦390,000 / $260')" class="action-btn px-2.5 py-1 rounded bg-zinc-800 hover:bg-white hover:text-black text-zinc-200 font-mono text-[10px] font-semibold transition-all">
+                  <button onclick="selectPledgeItem('96mm Mecanum Wheels Set', '₦400,000 / $270')" class="action-btn px-2.5 py-1 rounded bg-zinc-800 hover:bg-white hover:text-black text-zinc-200 font-mono text-[10px] font-semibold transition-all">
                     Sponsor
                   </button>
                 </td>
               </tr>
 
-              <!-- Item 5 -->
-              <tr class="hover:bg-zinc-900/40 transition-colors">
-                <td class="py-3.5 px-3 font-mono text-zinc-400">SNS-VIS-02</td>
+              <!-- Row 5 -->
+              <tr class="hover:bg-zinc-900/50 transition-colors">
+                <td class="py-3.5 px-3 font-mono text-zinc-500">BOM-05</td>
                 <td class="py-3.5 px-3">
-                  <div class="font-semibold text-white">AI Computer Vision Sensor & Optical Distance Array</div>
-                  <div class="text-[11px] text-zinc-400">HuskyLens AI + ToF laser rangefinders for AprilTags</div>
+                  <div class="font-semibold text-white text-sm">12V 3000mAh NiMH Slim Battery Packs & Smart Charger</div>
+                  <div class="text-[11px] text-zinc-400">4 competition-certified packs for continuous match cycling</div>
                 </td>
-                <td class="py-3.5 px-3 text-zinc-300">Needed for autonomous game element detection without driver.</td>
                 <td class="py-3.5 px-3">
-                  <span class="px-2 py-0.5 text-[9px] font-mono uppercase font-bold rounded bg-purple-950/60 text-purple-400 border border-purple-800/80">Autonomous</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-red-950/80 text-red-400 border border-red-800/60">
+                    Degraded Voltage Hold
+                  </span>
                 </td>
+                <td class="py-3.5 px-3 font-mono text-amber-400 font-medium">Critical</td>
                 <td class="py-3.5 px-3 text-right font-mono font-medium text-white">
-                  ₦330,000 <span class="text-zinc-500">($220)</span>
+                  ₦300,000 <span class="text-zinc-500">($200)</span>
                 </td>
                 <td class="py-3.5 px-3 text-right">
-                  <button onclick="selectPledgeItem('AI Computer Vision Sensor', '₦330,000 / $220')" class="action-btn px-2.5 py-1 rounded bg-zinc-800 hover:bg-white hover:text-black text-zinc-200 font-mono text-[10px] font-semibold transition-all">
+                  <button onclick="selectPledgeItem('12V NiMH Battery Packs & Charger', '₦300,000 / $200')" class="action-btn px-2.5 py-1 rounded bg-zinc-800 hover:bg-white hover:text-black text-zinc-200 font-mono text-[10px] font-semibold transition-all">
                     Sponsor
                   </button>
                 </td>
               </tr>
 
-              <!-- Item 6 -->
-              <tr class="hover:bg-zinc-900/40 transition-colors">
-                <td class="py-3.5 px-3 font-mono text-zinc-400">OPS-TRV-12</td>
+              <!-- Row 6 -->
+              <tr class="hover:bg-zinc-900/50 transition-colors">
+                <td class="py-3.5 px-3 font-mono text-zinc-500">BOM-06</td>
                 <td class="py-3.5 px-3">
-                  <div class="font-semibold text-white">Interstate Team Travel & Competition Registration</div>
-                  <div class="text-[11px] text-zinc-400">Transit, student lodging & registration for Abuja matches</div>
+                  <div class="font-semibold text-white text-sm">Structural Extrusions, Brackets, Gripper Actuators & Raw Hardware</div>
+                  <div class="text-[11px] text-zinc-400">T-slot aluminum, servo linkages, bearings, and heavy-duty scoring claw</div>
                 </td>
-                <td class="py-3.5 px-3 text-zinc-300">Transports 12 students and mentors from Ikom to national arena.</td>
                 <td class="py-3.5 px-3">
-                  <span class="px-2 py-0.5 text-[9px] font-mono uppercase font-bold rounded bg-zinc-800 text-zinc-300 border border-zinc-700">Logistics</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-amber-950/80 text-amber-400 border border-amber-800/60">
+                    Bent Brackets
+                  </span>
                 </td>
+                <td class="py-3.5 px-3 font-mono text-zinc-300">High</td>
+                <td class="py-3.5 px-3 text-right font-mono font-medium text-white">
+                  ₦700,000 <span class="text-zinc-500">($460)</span>
+                </td>
+                <td class="py-3.5 px-3 text-right">
+                  <button onclick="selectPledgeItem('Structural Extrusions & Gripper Hardware', '₦700,000 / $460')" class="action-btn px-2.5 py-1 rounded bg-zinc-800 hover:bg-white hover:text-black text-zinc-200 font-mono text-[10px] font-semibold transition-all">
+                    Sponsor
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Row 7 -->
+              <tr class="hover:bg-zinc-900/50 transition-colors">
+                <td class="py-3.5 px-3 font-mono text-zinc-500">BOM-07</td>
+                <td class="py-3.5 px-3">
+                  <div class="font-semibold text-white text-sm">Interstate Championship Travel, Accommodation & Season Entry</div>
+                  <div class="text-[11px] text-zinc-400">12 students + 2 mentor chaperones (Cross River to National Arena, Abuja)</div>
+                </td>
+                <td class="py-3.5 px-3">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-zinc-800 text-zinc-300">
+                    Season Logistic
+                  </span>
+                </td>
+                <td class="py-3.5 px-3 font-mono text-amber-400 font-medium">Essential</td>
                 <td class="py-3.5 px-3 text-right font-mono font-medium text-white">
                   ₦1,000,000 <span class="text-zinc-500">($670)</span>
                 </td>
@@ -414,21 +466,21 @@
       </div>
     </section>
 
-    <!-- SECTION 3: THE PROOF & ORIGIN STORY (High-Impact Visual Bento) -->
+    <!-- SECTION 3: THE PROOF & ORIGIN STORY (Visual Bento Grid) -->
     <section id="story" class="py-12 sm:py-16 border-b border-zinc-800/80">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
         <div class="max-w-2xl mb-8">
           <span class="font-mono text-xs text-amber-400 uppercase tracking-wider">Documentary Evidence</span>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-1">
-            Why FTC Judges Awarded Us the National Trophy
+            Grassroots Origins to the National Stage
           </h2>
           <p class="text-zinc-400 text-xs sm:text-sm mt-1.5">
             While well-funded private institutions started with imported kits, Team Galaxy solved the physics from scratch in an ordinary public school classroom.
           </p>
         </div>
 
-        <!-- 4-Block Visual Bento Grid -->
+        <!-- 6-Block Visual Bento Grid -->
         <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
           
           <!-- Block 1: The Cardboard Prototype (Hero Proof, 6 cols) -->
@@ -507,198 +559,584 @@
       </div>
     </section>
 
-    <!-- SECTION 4: SPONSORSHIP & AUDITED BANK WIRE (Consolidated Action Hub) -->
-    <section id="tiers" class="py-12 sm:py-16 border-b border-zinc-800/80 bg-[#090b11]">
+    <!-- SECTION 4: ENGINEERING CASE STUDY: WHY WE WON -->
+    <section id="case-study" class="py-12 sm:py-20 border-b border-zinc-800/80 bg-[#07080c]">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Visual Column (5 cols) -->
+          <div class="lg:col-span-5 space-y-4">
+            
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-3">
+              <div class="aspect-[4/3] rounded-lg overflow-hidden bg-black cursor-pointer" onclick="openLightbox('assets/images/photo-11.jpg', 'Original cardboard prototype of Galaxy Hybrid Mower with miniature DC motor, tape, and bottle cap')">
+                <img src="assets/images/photo-11.jpg" alt="Cardboard prototype" class="w-full h-full object-cover hover:scale-102 transition-transform duration-300">
+              </div>
+              <div class="pt-3 px-1 flex justify-between items-baseline">
+                <div>
+                  <div class="text-xs font-mono text-amber-400 uppercase font-bold">Phase 01: Grassroots Invention</div>
+                  <p class="text-xs font-semibold text-white mt-0.5">Cardboard, Tape & Toy Motors (FGC Ikom Campus)</p>
+                </div>
+                <span class="text-xs font-mono text-zinc-400">2023</span>
+              </div>
+            </div>
+
+            <!-- Two Sub-Assets: Blueprint and AI Screen -->
+            <div class="grid grid-cols-2 gap-3">
+              <div class="bg-zinc-900 border border-zinc-800 p-2 rounded-lg cursor-pointer group" onclick="openLightbox('assets/images/photo-10.jpg', 'Original Hand-Drawn Schematic Blueprint for Galaxy Hybrid Mower')">
+                <div class="aspect-square rounded overflow-hidden bg-black">
+                  <img src="assets/images/photo-10.jpg" alt="Hand drawn blueprint" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="text-[11px] font-mono text-zinc-400 mt-2 text-center">Hand-Drawn Blueprint</div>
+              </div>
+
+              <div class="bg-zinc-900 border border-zinc-800 p-2 rounded-lg cursor-pointer group" onclick="openLightbox('assets/images/photo-12.jpg', 'Aqua Vision AI Robotics Presentation by Team Galaxy')">
+                <div class="aspect-square rounded overflow-hidden bg-black">
+                  <img src="assets/images/photo-12.jpg" alt="Aqua vision presentation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="text-[11px] font-mono text-zinc-400 mt-2 text-center">Aqua Vision AI Project</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Case Study Text Column (7 cols) -->
+          <div class="lg:col-span-7 space-y-5">
+            <span class="font-mono text-xs text-amber-400 uppercase tracking-widest font-semibold">Technical Dossier • Case Study</span>
+            
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-[1.15]">
+              Why We Won the National Design Award
+            </h2>
+
+            <div class="space-y-4 text-zinc-300 text-sm sm:text-base leading-relaxed">
+              <p>
+                Many high school teams in metropolitan commercial centers begin with imported aluminum build kits and corporate-funded robotics labs. Team Galaxy did not.
+              </p>
+              <p>
+                Our journey began inside an ordinary classroom in Ikom. Before the students ever touched an extrusion channel, they solved the geometry on graph paper. They built functional prototypes out of discarded packaging cardboard to verify drive ratios, wheel clearance, and weight balance.
+              </p>
+              <p>
+                When our robot arrived at the <strong class="text-white">National FTC Championship inspection table</strong>, the judges recognized what made it extraordinary: every millimeter was intentional. The intake mechanism wasn't copied from an internet tutorial — it was engineered through twenty iterations of physical testing.
+              </p>
+              <p class="text-white font-medium bg-zinc-900/60 border border-zinc-800 p-3.5 rounded-lg text-sm">
+                That is why the judges awarded Team Galaxy the National Design Award. Sponsoring this team is an investment in genuine African problem solvers who do not wait for ideal conditions to build world-class things.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-zinc-800 grid grid-cols-2 gap-4 text-xs font-mono text-zinc-400">
+              <div>
+                <span class="text-zinc-500 block text-[10px] uppercase">Campus Base:</span>
+                <span class="text-zinc-200 font-sans font-medium">Calabar - Ikom Highway, Cross River</span>
+              </div>
+              <div>
+                <span class="text-zinc-500 block text-[10px] uppercase">Engineering Stack:</span>
+                <span class="text-zinc-200 font-sans font-medium">Autonomous Java + AprilTag Vision</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: VISUAL VERIFICATION ARCHIVE (Full 8-Plate Gallery) -->
+    <section id="archive" class="py-12 sm:py-20 border-b border-zinc-800/80 bg-[#07080c]">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-zinc-800 mb-8">
+          <div>
+            <span class="font-mono text-xs text-amber-400 uppercase tracking-widest">Exhibition & Audit</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-1">
+              Visual Verification Archive
+            </h2>
+            <p class="text-zinc-400 text-xs sm:text-sm mt-1">
+              Unedited photographic evidence of students, inspection judging, hardware assemblies, and championship awards.
+            </p>
+          </div>
+          <div class="text-xs font-mono text-zinc-400">
+            [ Click any plate to open high-resolution view ]
+          </div>
+        </div>
+
+        <!-- 8-Plate Gallery Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <!-- Plate 1 -->
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden cursor-pointer group" onclick="openLightbox('assets/images/photo-13.jpg', 'Team Galaxy students walking on FGC Ikom campus in custom gold-lettered uniforms')">
+            <div class="aspect-[3/4] overflow-hidden bg-black">
+              <img src="assets/images/photo-13.jpg" alt="Team Galaxy in Uniform" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500">
+            </div>
+            <div class="p-3 border-t border-zinc-800">
+              <span class="text-[10px] font-mono text-zinc-400 uppercase">Plate 01 • FGC Ikom</span>
+              <p class="text-xs font-semibold text-white mt-0.5">Students in Custom Gold Team Jerseys</p>
+            </div>
+          </div>
+
+          <!-- Plate 2 -->
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden cursor-pointer group" onclick="openLightbox('assets/images/photo-4.jpg', 'Students presenting robot mechanism during technical inspection judging')">
+            <div class="aspect-[3/4] overflow-hidden bg-black">
+              <img src="assets/images/photo-4.jpg" alt="Technical Judging" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500">
+            </div>
+            <div class="p-3 border-t border-zinc-800">
+              <span class="text-[10px] font-mono text-zinc-400 uppercase">Plate 02 • Technical Inspection</span>
+              <p class="text-xs font-semibold text-white mt-0.5">Presenting FTC Chassis to National Judges</p>
+            </div>
+          </div>
+
+          <!-- Plate 3 -->
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden cursor-pointer group" onclick="openLightbox('assets/images/photo-3.jpg', 'Team Galaxy on national stage receiving trophy with Federal Ministry of Education & Coderina')">
+            <div class="aspect-[3/4] overflow-hidden bg-black">
+              <img src="assets/images/photo-3.jpg" alt="National Stage Award" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500">
+            </div>
+            <div class="p-3 border-t border-zinc-800">
+              <span class="text-[10px] font-mono text-amber-400 uppercase font-semibold">Plate 03 • National Stage</span>
+              <p class="text-xs font-semibold text-white mt-0.5">Trophy Presentation with Federal Officials</p>
+            </div>
+          </div>
+
+          <!-- Plate 4 -->
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden cursor-pointer group" onclick="openLightbox('assets/images/photo-9.jpg', 'Full squad in arena with gamepads and competition robot')">
+            <div class="aspect-[3/4] overflow-hidden bg-black">
+              <img src="assets/images/photo-9.jpg" alt="Full Team Squad" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500">
+            </div>
+            <div class="p-3 border-t border-zinc-800">
+              <span class="text-[10px] font-mono text-zinc-400 uppercase">Plate 04 • Competition Lineup</span>
+              <p class="text-xs font-semibold text-white mt-0.5">Drivers, Mechanics & Programmers in Arena</p>
+            </div>
+          </div>
+
+          <!-- Plate 5 -->
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden cursor-pointer group" onclick="openLightbox('assets/images/photo-7.jpg', 'Official plaque: Champion 2nd Runner-Up presented by Federal Ministry of Education')">
+            <div class="aspect-[3/4] overflow-hidden bg-black">
+              <img src="assets/images/photo-7.jpg" alt="Champion Plaque" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500">
+            </div>
+            <div class="p-3 border-t border-zinc-800">
+              <span class="text-[10px] font-mono text-zinc-400 uppercase">Plate 05 • Government Citation</span>
+              <p class="text-xs font-semibold text-white mt-0.5">Official Plaque: 2nd Runner-Up Champion</p>
+            </div>
+          </div>
+
+          <!-- Plate 6 -->
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden cursor-pointer group" onclick="openLightbox('assets/images/photo-8.jpg', 'Team celebration with principal, teachers, and UNEARTHED certificates')">
+            <div class="aspect-[3/4] overflow-hidden bg-black">
+              <img src="assets/images/photo-8.jpg" alt="Celebration at FGC Ikom" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500">
+            </div>
+            <div class="p-3 border-t border-zinc-800">
+              <span class="text-[10px] font-mono text-zinc-400 uppercase">Plate 06 • School Honor</span>
+              <p class="text-xs font-semibold text-white mt-0.5">Victory Reception at FGC Ikom Quad</p>
+            </div>
+          </div>
+
+          <!-- Plate 7 -->
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden cursor-pointer group" onclick="openLightbox('assets/images/photo-1.jpg', 'Team Galaxy at FIRST Tech Challenge CENTERSTAGE season')">
+            <div class="aspect-[3/4] overflow-hidden bg-black">
+              <img src="assets/images/photo-1.jpg" alt="Centerstage Season" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500">
+            </div>
+            <div class="p-3 border-t border-zinc-800">
+              <span class="text-[10px] font-mono text-zinc-400 uppercase">Plate 07 • Multi-Season Record</span>
+              <p class="text-xs font-semibold text-white mt-0.5">Veteran Team Across Successive Seasons</p>
+            </div>
+          </div>
+
+          <!-- Plate 8 -->
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden cursor-pointer group" onclick="openLightbox('assets/images/photo-6.jpg', 'Students assembling and fine-tuning FTC robot arm in competition pit')">
+            <div class="aspect-[3/4] overflow-hidden bg-black">
+              <img src="assets/images/photo-6.jpg" alt="Pit crew at work" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500">
+            </div>
+            <div class="p-3 border-t border-zinc-800">
+              <span class="text-[10px] font-mono text-zinc-400 uppercase">Plate 08 • Hardware Assembly</span>
+              <p class="text-xs font-semibold text-white mt-0.5">Field-Testing Wire Routing & Gear Mesh</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: INSTITUTIONAL & CORPORATE SPONSORSHIP PACKAGES -->
+    <section id="tiers" class="py-12 sm:py-20 border-b border-zinc-800/80 bg-[#090b11]">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
         <div class="max-w-2xl mb-8">
-          <span class="font-mono text-xs text-amber-400 uppercase tracking-wider">Institutional Support</span>
+          <span class="font-mono text-xs text-amber-400 uppercase tracking-wider">Institutional & Corporate Packages</span>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-1">
-            Partnership & Direct Disbursement
+            Sponsorship Deliverables
           </h2>
           <p class="text-zinc-400 text-xs sm:text-sm mt-1.5">
-            Sponsorship delivers transparent, measurable impact for corporate CSR portfolios and STEM advocates. All disbursements go to the audited school bursary account.
+            Measurable brand visibility and CSR documentation for corporate sponsors and philanthropic foundations.
           </p>
         </div>
 
         <!-- 3 Sponsorship Tiers -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
           
-          <!-- Tier 1 -->
-          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-5 flex flex-col justify-between">
+          <!-- Tier 1: Bronze Supporter -->
+          <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between">
             <div>
-              <div class="flex justify-between items-center text-xs font-mono">
-                <span class="text-zinc-400 uppercase">Tier 01</span>
-                <span class="text-zinc-500">Alumni / Individual</span>
+              <div class="flex justify-between items-baseline font-mono">
+                <span class="text-xs text-zinc-400 uppercase">Tier 01</span>
+                <span class="text-xs text-zinc-500">Alumni & Individual</span>
               </div>
-              <h3 class="text-base font-bold text-white mt-1">STEM Booster</h3>
-              <div class="text-xl font-bold font-mono text-white mt-2">₦150,000 <span class="text-xs text-zinc-400 font-normal">($100)</span></div>
-              <p class="text-xs text-zinc-400 mt-2">Covers replacement cables, brackets, and essential hand tools.</p>
-              <ul class="text-xs text-zinc-300 space-y-1.5 mt-3 pt-3 border-t border-zinc-800">
-                <li class="flex items-center gap-1.5">
-                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                  <span>Name recognition on team website</span>
-                </li>
-                <li class="flex items-center gap-1.5">
-                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                  <span>Digital Certificate of Appreciation</span>
-                </li>
-              </ul>
+              <h3 class="font-bold text-xl text-white mt-2">STEM Booster</h3>
+              <div class="mt-3 font-mono">
+                <div class="text-2xl font-extrabold text-white">₦150,000</div>
+                <div class="text-xs text-zinc-400 mt-0.5">Approx. $100 USD</div>
+              </div>
+              <p class="text-xs text-zinc-400 mt-2.5 leading-relaxed">
+                Covers replacement battery cabling, connectors, and essential student workshop tools.
+              </p>
+
+              <div class="mt-6 pt-5 border-t border-zinc-800 space-y-2.5 text-xs text-zinc-300">
+                <div class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span>Official name recognition on Team Galaxy website</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span>Official partner acknowledgment on school Twitter</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span>Digital Certificate of STEM Sponsorship</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span>Quarterly competition results dispatch</span>
+                </div>
+              </div>
             </div>
-            <button onclick="selectTierPledge('STEM Booster (₦150,000)')" class="action-btn w-full mt-5 py-2.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-xs transition-colors">
+
+            <button onclick="selectTierPledge('Bronze Supporter (₦150,000)')" class="action-btn w-full mt-6 py-2.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-xs uppercase tracking-wider transition-colors">
               Pledge ₦150,000
             </button>
           </div>
 
-          <!-- Tier 2 (Highlighted) -->
-          <div class="bg-zinc-900 border-2 border-amber-400/70 rounded-xl p-5 flex flex-col justify-between relative shadow-lg shadow-amber-500/5">
-            <span class="absolute -top-2.5 right-4 px-2 py-0.5 rounded-full bg-amber-400 text-black text-[10px] font-bold font-mono uppercase tracking-wide">
-              Most Popular
-            </span>
-            <div>
-              <div class="flex justify-between items-center text-xs font-mono">
-                <span class="text-amber-400 uppercase font-semibold">Tier 02</span>
-                <span class="text-zinc-400">Hardware Partner</span>
-              </div>
-              <h3 class="text-base font-bold text-white mt-1">Hardware Partner</h3>
-              <div class="text-xl font-bold font-mono text-white mt-2">₦500,000 <span class="text-xs text-zinc-400 font-normal">($350)</span></div>
-              <p class="text-xs text-zinc-400 mt-2">Directly sponsors a full set of UltraPlanetary motors or Mecanum wheels.</p>
-              <ul class="text-xs text-zinc-300 space-y-1.5 mt-3 pt-3 border-t border-zinc-800">
-                <li class="flex items-center gap-1.5">
-                  <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
-                  <span>Company logo on official team jersey</span>
-                </li>
-                <li class="flex items-center gap-1.5">
-                  <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
-                  <span>Framed National Citation from FGC Ikom</span>
-                </li>
-              </ul>
+          <!-- Tier 2: Primary Hardware Partner (Highlighted) -->
+          <div class="bg-zinc-900 border-2 border-amber-400 rounded-2xl p-6 flex flex-col justify-between relative shadow-xl shadow-amber-500/5">
+            <div class="absolute -top-3 left-6 px-2.5 py-0.5 rounded bg-amber-400 text-black font-mono text-[10px] font-bold uppercase tracking-wider">
+              Primary Hardware Partner
             </div>
-            <button onclick="selectTierPledge('Hardware Partner (₦500,000)')" class="action-btn w-full mt-5 py-2.5 rounded-lg bg-white hover:bg-zinc-200 text-black font-bold text-xs uppercase tracking-wider transition-colors">
+            <div>
+              <div class="flex justify-between items-baseline font-mono mt-1">
+                <span class="text-xs text-amber-400 uppercase font-semibold">Tier 02</span>
+                <span class="text-xs text-emerald-400 font-semibold">Most Popular</span>
+              </div>
+              <h3 class="font-bold text-xl text-white mt-2">Hardware Partner</h3>
+              <div class="mt-3 font-mono">
+                <div class="text-2xl font-extrabold text-white">₦500,000</div>
+                <div class="text-xs text-zinc-400 mt-0.5">Approx. $350 USD</div>
+              </div>
+              <p class="text-xs text-zinc-400 mt-2.5 leading-relaxed">
+                Directly sponsors a full set of UltraPlanetary gearmotors or complete Mecanum drivetrain.
+              </p>
+
+              <div class="mt-6 pt-5 border-t border-zinc-800 space-y-2.5 text-xs text-zinc-200">
+                <div class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5"></i>
+                  <span class="font-semibold text-white">Company logo printed on official Team Galaxy competition jerseys</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5"></i>
+                  <span>Logo placed on national championship pit banner</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5"></i>
+                  <span>Dedicated corporate partner feature on official school channels</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5"></i>
+                  <span>Framed National Championship Commemorative Plaque</span>
+                </div>
+              </div>
+            </div>
+
+            <button onclick="selectTierPledge('Silver Partner (₦500,000)')" class="action-btn w-full mt-6 py-2.5 rounded-lg bg-amber-400 hover:bg-amber-300 text-black font-bold text-xs uppercase tracking-wider transition-colors">
               Pledge ₦500,000
             </button>
           </div>
 
-          <!-- Tier 3 -->
-          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-5 flex flex-col justify-between">
+          <!-- Tier 3: Gold Title Partner -->
+          <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between">
             <div>
-              <div class="flex justify-between items-center text-xs font-mono">
-                <span class="text-zinc-400 uppercase">Tier 03</span>
-                <span class="text-zinc-500">Corporate Title</span>
+              <div class="flex justify-between items-baseline font-mono">
+                <span class="text-xs text-zinc-400 uppercase">Tier 03</span>
+                <span class="text-xs text-amber-400 font-medium">Corporate / Title</span>
               </div>
-              <h3 class="text-base font-bold text-white mt-1">Title Sponsor</h3>
-              <div class="text-xl font-bold font-mono text-white mt-2">₦1,500,000+ <span class="text-xs text-zinc-400 font-normal">($1,000+)</span></div>
-              <p class="text-xs text-zinc-400 mt-2">Funds the complete robot overhaul, interstate bus travel, and season fees.</p>
-              <ul class="text-xs text-zinc-300 space-y-1.5 mt-3 pt-3 border-t border-zinc-800">
-                <li class="flex items-center gap-1.5">
-                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                  <span>Prime logo on robot chassis & scoring arm</span>
-                </li>
-                <li class="flex items-center gap-1.5">
-                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                  <span>Named co-sponsor on national competition banner</span>
-                </li>
-              </ul>
+              <h3 class="font-bold text-xl text-white mt-2">Title Sponsor</h3>
+              <div class="mt-3 font-mono">
+                <div class="text-2xl font-extrabold text-white">₦1,500,000+</div>
+                <div class="text-xs text-zinc-400 mt-0.5">Approx. $1,000+ USD</div>
+              </div>
+              <p class="text-xs text-zinc-400 mt-2.5 leading-relaxed">
+                Empowers the complete robot overhaul, interstate bus travel, and season qualification fees.
+              </p>
+
+              <div class="mt-6 pt-5 border-t border-zinc-800 space-y-2.5 text-xs text-zinc-300">
+                <div class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span class="font-bold text-white">Prime logo placement on competition robot chassis and arm</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span class="font-semibold text-white">Prominent front logo on student team uniforms</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span>Named in official media press releases and TV interviews</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <span>Comprehensive ESG/CSR Youth Mentoring Impact Report</span>
+                </div>
+              </div>
             </div>
-            <button onclick="selectTierPledge('Title Sponsor (₦1,500,000+)')" class="action-btn w-full mt-5 py-2.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-xs transition-colors">
+
+            <button onclick="selectTierPledge('Gold Title Partner (₦1,500,000+)')" class="action-btn w-full mt-6 py-2.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-xs uppercase tracking-wider transition-colors">
               Pledge ₦1,500,000+
             </button>
           </div>
 
         </div>
 
-        <!-- Two Column Action: Wire Box (Left) + Inquiry Form (Right) -->
-        <div id="contact" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pt-6 border-t border-zinc-800">
+      </div>
+    </section>
+
+    <!-- SECTION 7: GOVERNANCE, ACCOUNTABILITY & OFFICIAL CHANNELS -->
+    <section id="governance" class="py-12 sm:py-16 border-b border-zinc-800/80 bg-[#07080c]">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-zinc-800 mb-8">
+          <div>
+            <span class="font-mono text-xs text-zinc-400 uppercase tracking-widest">Public Governance & Accountability</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-1">
+              Institutional Oversight & Channels
+            </h2>
+          </div>
+          <p class="text-xs font-mono text-zinc-400">
+            Direct public institution under Federal Ministry of Education
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           
-          <!-- Bank Wire Card (5 cols) -->
-          <div class="lg:col-span-5 space-y-4">
-            <div>
-              <span class="font-mono text-[11px] text-zinc-400 uppercase">Direct School Disbursement</span>
-              <h3 class="text-lg font-bold text-white mt-0.5">Audited School Banking Details</h3>
-              <p class="text-xs text-zinc-400 mt-1">
-                Disbursements are credited directly to the audited Federal Government College, Ikom school bursary account for equipment replacement.
-              </p>
+          <!-- School Governance Box -->
+          <div class="p-6 rounded-xl bg-zinc-900 border border-zinc-800 space-y-3">
+            <div class="flex items-center gap-2.5 text-amber-400">
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
+              <span class="font-bold text-sm uppercase font-mono tracking-wider">Federal College Bursary Governance</span>
             </div>
-
-            <!-- Copy Bank Box -->
-            <div class="bg-zinc-900 border border-zinc-700 rounded-xl p-4 space-y-2.5">
-              <div class="flex items-center justify-between">
-                <span class="text-[11px] font-mono font-bold text-amber-400 uppercase">Official Bank Wire Details</span>
-                <button onclick="copyAccountDetails()" class="action-btn text-[11px] font-mono text-zinc-300 hover:text-white flex items-center gap-1 bg-zinc-800 px-2 py-1 rounded">
-                  <i data-lucide="copy" class="w-3 h-3"></i>
-                  <span id="copy-btn-text">Copy Wire Info</span>
-                </button>
-              </div>
-              <div class="font-mono text-xs text-zinc-300 space-y-1">
-                <div><span class="text-zinc-500">Account Name:</span> <strong class="text-white">Federal Government College Ikom (Robotics)</strong></div>
-                <div><span class="text-zinc-500">Bank Name:</span> <strong class="text-white">First Bank of Nigeria</strong></div>
-                <div><span class="text-zinc-500">Account No:</span> <strong class="text-white text-sm">1023489210</strong></div>
-                <div><span class="text-zinc-500">Payment Ref:</span> <span class="text-amber-400">FTC-GALAXY-[YourName]</span></div>
-              </div>
-            </div>
-
-            <!-- Campus Base Card -->
-            <div class="bg-zinc-900/60 border border-zinc-800 rounded-xl p-3.5 space-y-1.5 font-mono text-[11px]">
-              <div class="text-zinc-500 uppercase">Campus Workshop Base</div>
-              <div class="text-xs font-semibold text-white font-sans">Federal Government College, IKOM</div>
-              <div class="text-zinc-400">Calabar - Ikom Highway, Cross River State, Nigeria</div>
-              <div class="pt-1 text-zinc-400">
-                <span class="text-zinc-500">Coordinator:</span> Jay Lukeson (Trex Media & FGC STEM Dept)
-              </div>
+            <p class="text-xs text-zinc-300 leading-relaxed">
+              Federal Government College, Ikom operates with audited federal financial reporting. Every hardware expenditure, component import, and travel disbursement is managed through the official school bursary with itemized receipts provided to corporate donors.
+            </p>
+            <div class="pt-3 border-t border-zinc-800 text-[11px] font-mono text-zinc-400">
+              Official Base: Calabar - Ikom Highway, Cross River State, Nigeria
             </div>
           </div>
 
-          <!-- Inquiry Form (7 cols) -->
-          <div class="lg:col-span-7">
-            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 sm:p-7">
-              <h3 class="text-base font-bold text-white">Submit Sponsorship Inquiry</h3>
-              <p class="text-xs text-zinc-400 mt-0.5 mb-5">
-                To confirm an equipment pledge, corporate partnership, or request the full competition technical dossier, complete this form.
+          <!-- Official School Twitter/X Channel -->
+          <a href="https://x.com/FgcIkom" target="_blank" rel="noopener noreferrer" class="p-6 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-600 transition-all flex flex-col justify-between group">
+            <div>
+              <div class="flex justify-between items-center text-zinc-400 mb-2">
+                <div class="flex items-center gap-2 text-white font-bold text-sm">
+                  <i data-lucide="twitter" class="w-5 h-5 text-zinc-200"></i>
+                  <span>FGC IKOM on X</span>
+                </div>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform text-white"></i>
+              </div>
+              <div class="font-mono text-xs text-amber-400 font-semibold">@FgcIkom</div>
+              <p class="text-xs text-zinc-300 mt-2 leading-relaxed">
+                "Federal Government College, Ikom was founded in the year 1989 to provide qualitative education to Nigerians and to promote the spirit of oneness and patriotism."
               </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-zinc-800 text-[11px] font-mono text-zinc-400 flex items-center justify-between">
+              <span>Verified School Channel</span>
+              <span class="text-white group-hover:underline">Visit x.com/FgcIkom &rarr;</span>
+            </div>
+          </a>
 
-              <form id="inquiry-form" onsubmit="handleInquirySubmit(event)" class="space-y-3.5">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 8: AUDITED BANKING & INSTANT WHATSAPP CONTACT HUB -->
+    <section id="contact" class="py-12 sm:py-20 border-b border-zinc-800/80 bg-[#090b11]">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          
+          <!-- Left Column: School Bursary & Direct Mentors (5 cols) -->
+          <div class="lg:col-span-5 space-y-5">
+            <div>
+              <span class="font-mono text-xs text-amber-400 uppercase tracking-wider font-semibold">Direct Communication</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-1">
+                Bursary & Mentors
+              </h2>
+              <p class="text-zinc-400 text-xs sm:text-sm mt-1">
+                Directly connect with the robotics mentors and request audited school bursary wire instructions.
+              </p>
+            </div>
+
+            <!-- School Bursary Notice Card (Hidden account details provided on request) -->
+            <div class="bg-zinc-900 border border-zinc-700/80 rounded-xl p-5 space-y-3">
+              <div class="flex items-center gap-2">
+                <i data-lucide="lock" class="w-4 h-4 text-amber-400"></i>
+                <span class="text-xs font-mono font-bold text-white uppercase tracking-wider">Official School Bursary Account</span>
+              </div>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans">
+                To comply with Federal Ministry of Education accounting standards and protect against financial diversion, official FGC Ikom school bursary account details and wire references are provided directly upon verified pledge or formal inquiry.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-1">
+                <button onclick="requestBursaryDetails('jude')" class="action-btn px-3 py-2 rounded-lg bg-white hover:bg-zinc-200 text-black font-semibold text-xs transition-colors flex items-center gap-1.5">
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                  <span>Request Account on WhatsApp</span>
+                </button>
+                <a href="mailto:teamgalaxy.fgcikom@gmail.com,Judelukeson@gmail.com?subject=Team%20Galaxy%2021131%20Bursary%20Account%20Request" class="action-btn px-3 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-xs transition-colors flex items-center gap-1.5">
+                  <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                  <span>Request via Email</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Mentor 1: Mr. Jude Lukeson -->
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 flex flex-col justify-between space-y-3">
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="text-[10px] font-mono uppercase text-amber-400 font-semibold">Lead Mentor & Coordinator</span>
+                  <span class="text-[10px] font-mono text-zinc-500">Trex Media & STEM</span>
+                </div>
+                <h3 class="text-base font-bold text-white mt-1">Mr. Jude Lukeson</h3>
+                <div class="space-y-1 mt-2 text-xs font-mono text-zinc-300">
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 text-zinc-500"></i>
+                    <a href="tel:+2347043561686" class="hover:text-white">+234 704 356 1686</a>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="mail" class="w-3.5 h-3.5 text-zinc-500"></i>
+                    <a href="mailto:Judelukeson@gmail.com" class="hover:text-white">Judelukeson@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              <button onclick="openWhatsAppChat('jude')" class="action-btn w-full py-2 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Direct Chat with Mr. Jude</span>
+              </button>
+            </div>
+
+            <!-- Mentor 2: Mr. Jeremiah Offre -->
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 flex flex-col justify-between space-y-3">
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="text-[10px] font-mono uppercase text-zinc-400 font-semibold">Robotics Mentor</span>
+                  <span class="text-[10px] font-mono text-zinc-500">FGC Ikom Campus</span>
+                </div>
+                <h3 class="text-base font-bold text-white mt-1">Mr. Jeremiah Offre</h3>
+                <div class="space-y-1 mt-2 text-xs font-mono text-zinc-300">
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 text-zinc-500"></i>
+                    <a href="tel:+2348039608857" class="hover:text-white">+234 803 960 8857</a>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="mail" class="w-3.5 h-3.5 text-zinc-500"></i>
+                    <a href="mailto:offrejeremiah@gmail.com" class="hover:text-white">offrejeremiah@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              <button onclick="openWhatsAppChat('offre')" class="action-btn w-full py-2 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Direct Chat with Mr. Jeremiah</span>
+              </button>
+            </div>
+
+            <!-- Official Team Inbox -->
+            <div class="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800 text-xs font-mono flex items-center justify-between">
+              <span class="text-zinc-400">Team Inbox:</span>
+              <a href="mailto:teamgalaxy.fgcikom@gmail.com" class="text-amber-400 hover:underline font-semibold">teamgalaxy.fgcikom@gmail.com</a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Instant WhatsApp Sponsorship Inquiry Form (7 cols) -->
+          <div class="lg:col-span-7">
+            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center justify-between pb-4 border-b border-zinc-800 mb-6">
+                <div>
+                  <h3 class="text-lg font-bold text-white">Transmit Sponsorship Inquiry</h3>
+                  <p class="text-xs text-zinc-400 mt-0.5">
+                    Submissions redirect instantly into a pre-composed WhatsApp chat with team mentors.
+                  </p>
+                </div>
+                <div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 text-[10px] font-mono border border-emerald-500/20">
+                  <i data-lucide="zap" class="w-3 h-3"></i>
+                  <span>Instant WhatsApp Chat</span>
+                </div>
+              </div>
+
+              <form id="inquiry-form" onsubmit="handleInquirySubmit(event)" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label class="block text-[11px] font-mono text-zinc-400 mb-1">Your Name / Organization *</label>
-                    <input type="text" required placeholder="e.g. Zenith Tech / John Doe" class="w-full px-3 py-2 rounded-lg bg-zinc-950 border border-zinc-700 text-white text-xs focus:outline-none focus:border-white transition-colors">
+                    <label class="block text-[11px] font-mono text-zinc-400 mb-1">Your Name / Contact Person *</label>
+                    <input type="text" id="form-name" required placeholder="e.g. John Doe" class="w-full px-3.5 py-2.5 rounded-lg bg-zinc-950 border border-zinc-700 text-white text-xs focus:outline-none focus:border-amber-400 transition-colors">
                   </div>
                   <div>
-                    <label class="block text-[11px] font-mono text-zinc-400 mb-1">Corporate Email Address *</label>
-                    <input type="email" required placeholder="name@company.com" class="w-full px-3 py-2 rounded-lg bg-zinc-950 border border-zinc-700 text-white text-xs focus:outline-none focus:border-white transition-colors">
+                    <label class="block text-[11px] font-mono text-zinc-400 mb-1">Organization / Company</label>
+                    <input type="text" id="form-org" placeholder="e.g. Acme Tech Foundation" class="w-full px-3.5 py-2.5 rounded-lg bg-zinc-950 border border-zinc-700 text-white text-xs focus:outline-none focus:border-amber-400 transition-colors">
                   </div>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label class="block text-[11px] font-mono text-zinc-400 mb-1">Phone / WhatsApp Number</label>
-                    <input type="tel" placeholder="+234 ..." class="w-full px-3 py-2 rounded-lg bg-zinc-950 border border-zinc-700 text-white text-xs focus:outline-none focus:border-white transition-colors">
+                    <label class="block text-[11px] font-mono text-zinc-400 mb-1">Email Address *</label>
+                    <input type="email" id="form-email" required placeholder="name@company.com" class="w-full px-3.5 py-2.5 rounded-lg bg-zinc-950 border border-zinc-700 text-white text-xs focus:outline-none focus:border-amber-400 transition-colors">
                   </div>
                   <div>
+                    <label class="block text-[11px] font-mono text-zinc-400 mb-1">Phone / WhatsApp Number</label>
+                    <input type="tel" id="form-phone" placeholder="+234 ..." class="w-full px-3.5 py-2.5 rounded-lg bg-zinc-950 border border-zinc-700 text-white text-xs focus:outline-none focus:border-amber-400 transition-colors">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
                     <label class="block text-[11px] font-mono text-zinc-400 mb-1">Sponsorship Intention</label>
-                    <select id="form-tier-select" class="w-full px-3 py-2 rounded-lg bg-zinc-950 border border-zinc-700 text-white text-xs focus:outline-none focus:border-white transition-colors">
-                      <option value="general">BOM Item Replacement</option>
-                      <option value="bronze">Tier 01: STEM Booster (₦150,000)</option>
-                      <option value="silver">Tier 02: Hardware Partner (₦500,000)</option>
-                      <option value="gold">Tier 03: Title Sponsor (₦1,500,000+)</option>
+                    <select id="form-tier-select" class="w-full px-3.5 py-2.5 rounded-lg bg-zinc-950 border border-zinc-700 text-white text-xs focus:outline-none focus:border-amber-400 transition-colors">
+                      <option value="bom-item">Specific BOM Item Replacement</option>
+                      <option value="tier-1">Tier 01: STEM Booster (₦150,000)</option>
+                      <option value="tier-2">Tier 02: Hardware Partner (₦500,000)</option>
+                      <option value="tier-3">Tier 03: Title Sponsor (₦1,500,000+)</option>
                       <option value="custom">Custom Hardware Shipment / Grant</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-[11px] font-mono text-zinc-400 mb-1">Recipient Mentor</label>
+                    <select id="form-mentor-select" class="w-full px-3.5 py-2.5 rounded-lg bg-zinc-950 border border-zinc-700 text-white text-xs focus:outline-none focus:border-amber-400 transition-colors">
+                      <option value="jude">Mr. Jude Lukeson (+234 704 356 1686)</option>
+                      <option value="offre">Mr. Jeremiah Offre (+234 803 960 8857)</option>
                     </select>
                   </div>
                 </div>
 
                 <div>
                   <label class="block text-[11px] font-mono text-zinc-400 mb-1">Message / Allocation Details *</label>
-                  <textarea rows="3" required placeholder="Specify which hardware component or partnership tier you are pledging..." class="w-full px-3 py-2 rounded-lg bg-zinc-950 border border-zinc-700 text-white text-xs focus:outline-none focus:border-white transition-colors resize-none"></textarea>
+                  <textarea id="form-message" rows="3" required placeholder="Specify which hardware component or partnership tier you are pledging..." class="w-full px-3.5 py-2.5 rounded-lg bg-zinc-950 border border-zinc-700 text-white text-xs focus:outline-none focus:border-amber-400 transition-colors resize-none"></textarea>
                 </div>
 
-                <button type="submit" class="action-btn w-full py-3 rounded-lg bg-white hover:bg-zinc-200 text-black font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
-                  <i data-lucide="send" class="w-3.5 h-3.5"></i>
-                  <span>Transmit Inquiry</span>
+                <button type="submit" class="action-btn w-full py-3.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/10">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span>Transmit to WhatsApp &rarr;</span>
                 </button>
               </form>
 
-              <div id="form-success-msg" class="hidden mt-3 p-3 rounded-lg bg-emerald-950/60 border border-emerald-800 text-emerald-300 text-xs font-mono flex items-center gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
-                <span>Inquiry transmitted. The FGC Ikom robotics coordinator will respond promptly.</span>
+              <div id="form-success-msg" class="hidden mt-4 p-3.5 rounded-lg bg-emerald-950/60 border border-emerald-800 text-emerald-300 text-xs font-mono space-y-1">
+                <div class="flex items-center gap-2 font-semibold">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                  <span>Inquiry prepared and WhatsApp launched.</span>
+                </div>
+                <p class="text-[11px] text-zinc-400">
+                  If WhatsApp did not open automatically, you can message directly: <a href="https://wa.me/2347043561686" target="_blank" class="text-emerald-400 underline">+234 704 356 1686</a> or email <a href="mailto:teamgalaxy.fgcikom@gmail.com" class="text-emerald-400 underline">teamgalaxy.fgcikom@gmail.com</a>.
+                </p>
               </div>
 
             </div>
@@ -712,11 +1150,11 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="py-8 bg-[#050608] text-xs text-zinc-400">
+  <footer class="py-8 bg-[#050608] text-xs text-zinc-400 border-t border-zinc-800/80">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
       
       <div class="flex items-center gap-2">
-        <span class="font-bold text-white text-xs">TEAM GALAXY</span>
+        <span class="font-bold text-white text-xs">TEAM GALAXY 21131</span>
         <span class="text-zinc-600">/</span>
         <span class="font-mono text-[11px] text-zinc-400">Federal Government College, Ikom • Cross River State</span>
       </div>
@@ -724,8 +1162,13 @@
       <div class="flex items-center gap-5 font-mono text-[11px] text-zinc-400">
         <a href="#story" class="hover:text-white transition-colors">Story</a>
         <a href="#wishlist" class="hover:text-white transition-colors">BOM</a>
+        <a href="#case-study" class="hover:text-white transition-colors">Design</a>
+        <a href="#archive" class="hover:text-white transition-colors">Archive</a>
         <a href="#tiers" class="hover:text-white transition-colors">Sponsorship</a>
-        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        <a href="https://x.com/FgcIkom" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors inline-flex items-center gap-1 text-zinc-300">
+          <i data-lucide="twitter" class="w-3 h-3"></i>
+          <span>@FgcIkom</span>
+        </a>
       </div>
 
       <p class="font-mono text-[10px] text-zinc-500">
@@ -755,38 +1198,43 @@
       
       <div class="flex items-start justify-between pb-3 border-b border-zinc-800">
         <div>
-          <span class="text-[10px] font-mono text-zinc-400 uppercase">Sponsorship Allocation</span>
-          <h3 class="text-lg font-bold text-white mt-0.5">Sponsor Team Galaxy Hardware</h3>
+          <span class="text-[10px] font-mono text-amber-400 uppercase font-semibold">FTC Team 21131 Requisition</span>
+          <h3 class="text-lg font-bold text-white mt-0.5">Sponsor Team Galaxy</h3>
         </div>
         <button onclick="closePledgeModal()" class="text-zinc-400 hover:text-white p-1">
           <i data-lucide="x" class="w-4 h-4"></i>
         </button>
       </div>
 
-      <div id="pledge-item-indicator" class="hidden p-2.5 rounded-lg bg-zinc-950 border border-zinc-800 text-xs font-mono text-zinc-300">
+      <div id="pledge-item-indicator" class="hidden p-2.5 rounded-lg bg-zinc-950 border border-zinc-800 text-xs font-mono text-amber-400">
         <!-- Injected item -->
       </div>
 
       <p class="text-xs text-zinc-300 leading-relaxed font-sans">
-        Sponsorship funds directly replace aging FIRST Tech Challenge equipment under the governance of Federal Government College, Ikom.
+        Sponsorship funds replace aging motors, electronics, and battery packs under the governance of Federal Government College, Ikom.
       </p>
 
-      <!-- Bank Transfer Details Box -->
-      <div class="p-3.5 rounded-lg bg-zinc-950 border border-zinc-800 font-mono text-xs space-y-1 text-zinc-300">
-        <div class="text-[9px] text-zinc-500 uppercase tracking-wider font-bold">Audited School Bursary Account</div>
-        <div><span class="text-zinc-500">Account Name:</span> <strong class="text-white">Federal Government College Ikom (Robotics)</strong></div>
-        <div><span class="text-zinc-500">Bank:</span> <strong class="text-white">First Bank of Nigeria</strong></div>
-        <div><span class="text-zinc-500">Account No:</span> <strong class="text-amber-400 text-sm">1023489210</strong></div>
-        <div><span class="text-zinc-500">Reference:</span> <span class="text-zinc-300">FTC-GALAXY-[YourName]</span></div>
+      <!-- School Bursary Notice Box -->
+      <div class="p-3.5 rounded-lg bg-zinc-950 border border-zinc-800 font-mono text-xs space-y-1.5 text-zinc-300">
+        <div class="text-[9px] text-amber-400 uppercase tracking-wider font-bold">Official School Bursary Account</div>
+        <p class="text-[11px] text-zinc-400 font-sans leading-normal">
+          Official FGC Ikom school bursary wire details and payment reference are issued directly to donors to guarantee strict federal audit trails.
+        </p>
+        <div class="pt-2 flex flex-col gap-1.5 font-sans">
+          <button onclick="requestBursaryDetails('jude'); closePledgeModal();" class="w-full py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-xs flex items-center justify-center gap-1.5 transition-colors">
+            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+            <span>Request Details on WhatsApp</span>
+          </button>
+          <a href="#contact" onclick="closePledgeModal()" class="w-full py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition-colors">
+            <i data-lucide="user-check" class="w-3.5 h-3.5"></i>
+            <span>View Mentor Contact Cards</span>
+          </a>
+        </div>
       </div>
 
-      <div class="flex gap-2.5 pt-1">
-        <button onclick="closePledgeModal()" class="action-btn flex-1 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white font-mono text-xs uppercase tracking-wider">
+      <div class="flex justify-end pt-1">
+        <button onclick="closePledgeModal()" class="action-btn px-4 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 font-mono text-xs">
           Close
-        </button>
-        <button onclick="copyAccountDetails()" class="action-btn flex-1 py-2 rounded-lg bg-white hover:bg-zinc-200 text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1">
-          <i data-lucide="check" class="w-3.5 h-3.5"></i>
-          <span>Copy Account</span>
         </button>
       </div>
 
@@ -794,7 +1242,7 @@
   </div>
 
   <!-- Micro-Toast -->
-  <div id="toast" class="fixed bottom-6 right-6 z-50 max-w-sm px-4 py-2 rounded-lg bg-white text-black shadow-2xl text-xs font-mono flex items-center gap-2 transform translate-y-16 opacity-0 transition-all duration-200 pointer-events-none font-semibold">
+  <div id="toast" class="fixed bottom-6 right-6 z-50 max-w-sm px-4 py-2.5 rounded-lg bg-white text-black shadow-2xl text-xs font-mono flex items-center gap-2 transform translate-y-20 opacity-0 transition-all duration-200 pointer-events-none font-semibold">
     <i data-lucide="check" class="w-4 h-4 text-black shrink-0"></i>
     <span id="toast-text">Details copied</span>
   </div>

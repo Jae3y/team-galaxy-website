@@ -1,5 +1,6 @@
 // ==========================================================================
-// Team Galaxy — Main Application & Motion Script
+// Team Galaxy 21131 — Main Application & Motion Script
+// Federal Government College, Ikom • FIRST Tech Challenge Nigeria Champions
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,9 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.lucide) {
     window.lucide.createIcons();
   }
-
-  // Initialize Canvas Constellation Starfield
-  initGalaxyCanvas();
 
   // Mobile Menu Setup
   initMobileMenu();
@@ -50,124 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // --------------------------------------------------------------------------
-// 1. Interactive Starfield & Constellation Canvas
-// --------------------------------------------------------------------------
-function initGalaxyCanvas() {
-  const canvas = document.getElementById('galaxy-canvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  if (!ctx) return;
-
-  let width = (canvas.width = window.innerWidth);
-  let height = (canvas.height = window.innerHeight);
-
-  window.addEventListener('resize', () => {
-    width = canvas.width = window.innerWidth;
-    height = canvas.height = window.innerHeight;
-    initParticles();
-  });
-
-  const mouse = { x: -1000, y: -1000, radius: 140 };
-
-  window.addEventListener('mousemove', (e) => {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
-  });
-
-  window.addEventListener('mouseleave', () => {
-    mouse.x = -1000;
-    mouse.y = -1000;
-  });
-
-  let particles = [];
-  const PARTICLE_COUNT = Math.min(Math.floor((width * height) / 14000), 85);
-
-  class Particle {
-    constructor() {
-      this.x = Math.random() * width;
-      this.y = Math.random() * height;
-      this.vx = (Math.random() - 0.5) * 0.45;
-      this.vy = (Math.random() - 0.5) * 0.45;
-      this.radius = Math.random() * 1.5 + 0.8;
-      // Slight cyan/amber/white palette
-      const colors = ['#00E5FF', '#38BDF8', '#818CF8', '#F59E0B', '#FFFFFF'];
-      this.color = colors[Math.floor(Math.random() * colors.length)];
-      this.baseAlpha = Math.random() * 0.5 + 0.3;
-    }
-
-    update() {
-      this.x += this.vx;
-      this.y += this.vy;
-
-      if (this.x < 0) this.x = width;
-      if (this.x > width) this.x = 0;
-      if (this.y < 0) this.y = height;
-      if (this.y > height) this.y = 0;
-
-      // Mouse interactive push
-      const dx = mouse.x - this.x;
-      const dy = mouse.y - this.y;
-      const dist = Math.sqrt(dx * dx + dy * dy);
-      if (dist < mouse.radius) {
-        const force = (1 - dist / mouse.radius) * 0.8;
-        this.x -= (dx / dist) * force * 2;
-        this.y -= (dy / dist) * force * 2;
-      }
-    }
-
-    draw() {
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = this.color;
-      ctx.globalAlpha = this.baseAlpha;
-      ctx.fill();
-    }
-  }
-
-  function initParticles() {
-    particles = [];
-    for (let i = 0; i < PARTICLE_COUNT; i++) {
-      particles.push(new Particle());
-    }
-  }
-
-  function animate() {
-    ctx.clearRect(0, 0, width, height);
-
-    // Connect close particles with delicate glowing lines
-    for (let i = 0; i < particles.length; i++) {
-      for (let j = i + 1; j < particles.length; j++) {
-        const dx = particles[i].x - particles[j].x;
-        const dy = particles[i].y - particles[j].y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-
-        if (dist < 110) {
-          ctx.beginPath();
-          ctx.moveTo(particles[i].x, particles[i].y);
-          ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = '#00E5FF';
-          ctx.globalAlpha = (1 - dist / 110) * 0.15;
-          ctx.lineWidth = 0.7;
-          ctx.stroke();
-        }
-      }
-    }
-
-    // Update and draw particles
-    particles.forEach((p) => {
-      p.update();
-      p.draw();
-    });
-
-    requestAnimationFrame(animate);
-  }
-
-  initParticles();
-  animate();
-}
-
-// --------------------------------------------------------------------------
-// 2. Mobile Menu Setup
+// 1. Mobile Menu Setup
 // --------------------------------------------------------------------------
 function initMobileMenu() {
   const btn = document.getElementById('mobile-menu-btn');
@@ -186,7 +67,7 @@ function initMobileMenu() {
 }
 
 // --------------------------------------------------------------------------
-// 3. Lightbox Functionality
+// 2. Lightbox Functionality
 // --------------------------------------------------------------------------
 function openLightbox(src, caption) {
   const modal = document.getElementById('lightbox-modal');
@@ -196,7 +77,7 @@ function openLightbox(src, caption) {
   if (!modal || !img || !cap) return;
 
   img.src = src;
-  img.alt = caption || 'Team Galaxy Award/Photo Proof';
+  img.alt = caption || 'Team Galaxy Award / Photo Proof';
   cap.textContent = caption || '';
 
   modal.classList.remove('hidden');
@@ -211,13 +92,23 @@ function closeLightbox() {
 }
 
 // --------------------------------------------------------------------------
-// 4. Pledge Modal Functionality
+// 3. Pledge Modal Functionality
 // --------------------------------------------------------------------------
-function openPledgeModal() {
+function openPledgeModal(initialItem = '', initialCost = '') {
   const modal = document.getElementById('pledge-modal');
   if (!modal) return;
   modal.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
+
+  const indicator = document.getElementById('pledge-item-indicator');
+  if (indicator) {
+    if (initialItem) {
+      indicator.innerHTML = `<strong>Selected Item:</strong> ${initialItem} ${initialCost ? `(${initialCost})` : ''}`;
+      indicator.classList.remove('hidden');
+    } else {
+      indicator.classList.add('hidden');
+    }
+  }
 }
 
 function closePledgeModal() {
@@ -231,63 +122,104 @@ function closePledgeModal() {
 }
 
 function selectPledgeItem(itemName, cost) {
-  openPledgeModal();
-  const indicator = document.getElementById('pledge-item-indicator');
-  if (indicator) {
-    indicator.innerHTML = `<strong>Selected Item to Sponsor:</strong> ${itemName} (${cost})`;
-    indicator.classList.remove('hidden');
-  }
+  openPledgeModal(itemName, cost);
 
   // Pre-fill form dropdown if user navigates to form
   const select = document.getElementById('form-tier-select');
   if (select) {
-    select.value = 'general';
+    select.value = 'bom-item';
+  }
+
+  const messageBox = document.getElementById('form-message');
+  if (messageBox) {
+    messageBox.value = `I would like to sponsor / pledge for hardware item: ${itemName} (${cost}).`;
   }
 }
 
 function selectTierPledge(tierName) {
-  openPledgeModal();
-  const indicator = document.getElementById('pledge-item-indicator');
-  if (indicator) {
-    indicator.innerHTML = `<strong>Selected Sponsorship Tier:</strong> ${tierName}`;
-    indicator.classList.remove('hidden');
-  }
+  openPledgeModal(tierName);
 
   const select = document.getElementById('form-tier-select');
   if (select) {
-    if (tierName.includes('Bronze')) select.value = 'bronze';
-    else if (tierName.includes('Silver')) select.value = 'silver';
-    else if (tierName.includes('Gold')) select.value = 'gold';
+    if (tierName.includes('Booster') || tierName.includes('150,000')) select.value = 'tier-1';
+    else if (tierName.includes('Partner') || tierName.includes('500,000')) select.value = 'tier-2';
+    else if (tierName.includes('Title') || tierName.includes('1,500,000')) select.value = 'tier-3';
+  }
+
+  const messageBox = document.getElementById('form-message');
+  if (messageBox) {
+    messageBox.value = `I would like to support Team Galaxy under the ${tierName} sponsorship package.`;
   }
 }
 
 // --------------------------------------------------------------------------
-// 5. Copy Bank & Account Details
+// 4. Instant WhatsApp Inquiry Redirect Handler
 // --------------------------------------------------------------------------
-function copyAccountDetails() {
-  const details = `Team Galaxy / FGC Ikom Robotics Sponsorship Details:
-Account Name: Federal Government College Ikom (Robotics / Team Galaxy)
-Bank: First Bank of Nigeria
-Account Number: 1023489210
-Reference: FTC-GALAXY-[YourName]
-Location: FGC Ikom, Cross River State, Nigeria
-Contact: teamgalaxy.fgcikom@gmail.com`;
+function handleInquirySubmit(e) {
+  e.preventDefault();
+  const form = document.getElementById('inquiry-form');
+  if (!form) return;
 
-  navigator.clipboard.writeText(details).then(
-    () => {
-      showToast('Bank details copied to clipboard!');
-      const btnText = document.getElementById('copy-btn-text');
-      if (btnText) {
-        btnText.textContent = 'Copied!';
-        setTimeout(() => {
-          btnText.textContent = 'Copy Info';
-        }, 2500);
-      }
-    },
-    () => {
-      showToast('Could not copy automatically. Details shown on screen.');
-    }
-  );
+  const name = form.querySelector('#form-name')?.value.trim() || 'Anonymous';
+  const org = form.querySelector('#form-org')?.value.trim() || '';
+  const email = form.querySelector('#form-email')?.value.trim() || 'Not provided';
+  const phone = form.querySelector('#form-phone')?.value.trim() || 'Not provided';
+  const intention = form.querySelector('#form-tier-select')?.value || 'General Inquiry';
+  const mentorSelect = form.querySelector('#form-mentor-select')?.value || 'jude';
+  const userMessage = form.querySelector('#form-message')?.value.trim() || 'No message provided';
+
+  // Choose mentor target phone number
+  // Mr. Jude Lukeson: +234 704 356 1686 (2347043561686)
+  // Mr. Jeremiah Offre: +234 803 960 8857 (2348039608857)
+  const targetPhone = mentorSelect === 'offre' ? '2348039608857' : '2347043561686';
+  const mentorName = mentorSelect === 'offre' ? 'Mr. Jeremiah Offre' : 'Mr. Jude Lukeson';
+
+  const waMessage = 
+`*TEAM GALAXY 21131 SPONSORSHIP INQUIRY*
+----------------------------------------
+*To:* ${mentorName} (FGC Ikom Robotics)
+*From:* ${name}${org ? ` (${org})` : ''}
+*Email:* ${email}
+*Phone / WhatsApp:* ${phone}
+*Sponsorship Intention:* ${intention}
+
+*Message:*
+${userMessage}
+----------------------------------------
+_Dispatched via team-galaxy-website.vercel.app_`;
+
+  const waUrl = `https://wa.me/${targetPhone}?text=${encodeURIComponent(waMessage)}`;
+
+  // Show inline success message
+  const successMsg = document.getElementById('form-success-msg');
+  if (successMsg) {
+    successMsg.classList.remove('hidden');
+    setTimeout(() => {
+      successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 100);
+  }
+
+  showToast('Opening WhatsApp with your pre-filled inquiry...');
+
+  // Open WhatsApp in new tab
+  window.open(waUrl, '_blank');
+}
+
+// --------------------------------------------------------------------------
+// 5. Direct WhatsApp Chat Initiators
+// --------------------------------------------------------------------------
+function openWhatsAppChat(mentor = 'jude', customText = '') {
+  const targetPhone = mentor === 'offre' ? '2348039608857' : '2347043561686';
+  const mentorName = mentor === 'offre' ? 'Mr. Jeremiah Offre' : 'Mr. Jude Lukeson';
+  
+  const defaultText = customText || `Hello ${mentorName}, I am contacting you regarding sponsorship & hardware support for Team Galaxy 21131 (FGC Ikom Robotics).`;
+  const waUrl = `https://wa.me/${targetPhone}?text=${encodeURIComponent(defaultText)}`;
+  window.open(waUrl, '_blank');
+}
+
+function requestBursaryDetails(mentor = 'jude') {
+  const customText = `Hello, I would like to request the official Federal Government College, Ikom school bursary account details and payment reference to sponsor Team Galaxy 21131.`;
+  openWhatsAppChat(mentor, customText);
 }
 
 // --------------------------------------------------------------------------
@@ -307,34 +239,17 @@ function showToast(message) {
   toastTimeout = setTimeout(() => {
     toast.classList.remove('translate-y-0', 'opacity-100');
     toast.classList.add('translate-y-20', 'opacity-0');
-  }, 3200);
+  }, 3500);
 }
 
-// --------------------------------------------------------------------------
-// 7. Form Submission Handler
-// --------------------------------------------------------------------------
-function handleInquirySubmit(e) {
-  e.preventDefault();
-  const form = document.getElementById('inquiry-form');
-  const successMsg = document.getElementById('form-success-msg');
-
-  if (form && successMsg) {
-    successMsg.classList.remove('hidden');
-    form.reset();
-    showToast('Inquiry submitted successfully!');
-    setTimeout(() => {
-      successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 100);
-  }
-}
-
-// Make functions globally accessible for inline HTML handlers
+// Global exposure for inline HTML event handlers
 window.openLightbox = openLightbox;
 window.closeLightbox = closeLightbox;
 window.openPledgeModal = openPledgeModal;
 window.closePledgeModal = closePledgeModal;
 window.selectPledgeItem = selectPledgeItem;
 window.selectTierPledge = selectTierPledge;
-window.copyAccountDetails = copyAccountDetails;
 window.handleInquirySubmit = handleInquirySubmit;
+window.openWhatsAppChat = openWhatsAppChat;
+window.requestBursaryDetails = requestBursaryDetails;
 window.showToast = showToast;
