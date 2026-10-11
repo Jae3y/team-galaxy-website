@@ -223,7 +223,28 @@ function requestBursaryDetails(mentor = 'jude') {
 }
 
 // --------------------------------------------------------------------------
-// 6. Toast Notification Helper
+// 6. Direct Account Info Copier
+// --------------------------------------------------------------------------
+function copyAccountInfo() {
+  const infoText = 
+`FEDERAL GOVERNMENT COLLEGE, IKOM — ROBOTICS PROJECT ACCOUNT
+Account Name: Federal Government College Ikom (Robotics Club / Team Galaxy)
+Audited Wire & Bursary Reference: Provided upon verified pledge or formal inquiry.
+Official Inquiries: teamgalaxy.fgcikom@gmail.com | +234 704 356 1686`;
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(infoText).then(() => {
+      showToast('Project account info copied to clipboard');
+    }).catch(() => {
+      showToast('Federal Government College Ikom (Robotics Club)');
+    });
+  } else {
+    showToast('Federal Government College Ikom (Robotics Club)');
+  }
+}
+
+// --------------------------------------------------------------------------
+// 7. Toast Notification Helper
 // --------------------------------------------------------------------------
 let toastTimeout;
 function showToast(message) {
@@ -252,4 +273,6 @@ window.selectTierPledge = selectTierPledge;
 window.handleInquirySubmit = handleInquirySubmit;
 window.openWhatsAppChat = openWhatsAppChat;
 window.requestBursaryDetails = requestBursaryDetails;
+window.copyAccountInfo = copyAccountInfo;
 window.showToast = showToast;
+
