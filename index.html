@@ -50,16 +50,16 @@
 </head>
 <body class="bg-[#07080c] text-zinc-200 font-sans antialiased selection:bg-white selection:text-black">
 
-  <!-- Top Dispatch Banner: Concrete Season Status (No Artificial Deadline) -->
-  <div class="border-b border-zinc-800/80 bg-[#0c0e15] text-xs text-zinc-300 py-2.5 px-4">
-    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3">
-      <div class="flex items-center gap-2.5">
-        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span class="font-mono text-zinc-300 uppercase tracking-wider text-[11px] font-semibold">FTC Team 21131 Active</span>
-        <span class="text-zinc-600">|</span>
-        <span class="text-zinc-300">2025/2026 Equipment Requisition &bull; <strong class="text-white font-medium">Federal Government College, Ikom</strong></span>
+  <!-- Top Dispatch Banner: Concrete Season Status -->
+  <div class="border-b border-zinc-800/80 bg-[#0c0e15] text-xs text-zinc-300 py-2.5 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div class="flex items-center gap-2.5 shrink min-w-0">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+        <span class="font-mono text-zinc-300 uppercase tracking-wider text-[11px] font-semibold whitespace-nowrap">FTC Team 21131 Active</span>
+        <span class="text-zinc-600 hidden sm:inline">|</span>
+        <span class="text-zinc-300 truncate hidden sm:inline">2025/2026 Equipment Requisition &bull; <strong class="text-white font-medium">Federal Government College, Ikom</strong></span>
       </div>
-      <div class="flex items-center gap-4 text-zinc-400 font-mono text-[11px]">
+      <div class="flex items-center gap-4 text-zinc-400 font-mono text-[11px] shrink-0 whitespace-nowrap">
         <a href="#wishlist" class="text-white hover:underline inline-flex items-center gap-1 font-sans">
           Hardware Requisition <i data-lucide="arrow-down-right" class="w-3.5 h-3.5"></i>
         </a>
@@ -72,46 +72,44 @@
 
   <!-- Primary Navigation -->
   <header class="sticky top-0 z-40 bg-[#07080c]/95 backdrop-blur-md border-b border-zinc-800/80">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
       
-      <!-- Brand Wordmark -->
-      <a href="#" class="flex items-center gap-3 group">
-        <div class="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-700/80 flex items-center justify-center text-white group-hover:border-zinc-500 transition-colors">
+      <!-- Brand Wordmark (Zero Wrap, Zero Shrink) -->
+      <a href="#" class="flex items-center gap-2.5 group shrink-0 whitespace-nowrap">
+        <div class="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-700/80 flex items-center justify-center text-white group-hover:border-zinc-500 transition-colors shrink-0">
           <i data-lucide="compass" class="w-4 h-4 text-amber-400"></i>
         </div>
-        <div>
-          <div class="flex items-center gap-2">
-            <span class="font-bold text-base tracking-tight text-white group-hover:text-amber-400 transition-colors">TEAM GALAXY <span class="font-mono text-xs text-amber-400 font-semibold">21131</span></span>
-            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-800 text-zinc-300 font-semibold border border-zinc-700">FGC IKOM</span>
-          </div>
-          <p class="text-[10px] text-zinc-400 font-mono">FIRST Tech Challenge &bull; Cross River State</p>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-sm tracking-tight text-white group-hover:text-amber-400 transition-colors">TEAM GALAXY</span>
+          <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-800 text-amber-400 font-bold border border-zinc-700">21131</span>
+          <span class="hidden sm:inline-block text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-900 text-zinc-400 border border-zinc-800">FGC IKOM</span>
         </div>
       </a>
 
-      <!-- Desktop Links -->
-      <nav class="hidden md:flex items-center gap-5 text-xs font-semibold uppercase tracking-wider text-zinc-300">
-        <a href="#story" class="hover:text-white transition-colors">Story</a>
-        <a href="#wishlist" class="hover:text-white transition-colors">Hardware Needs</a>
-        <a href="#case-study" class="hover:text-white transition-colors">Why We Won</a>
-        <a href="#archive" class="hover:text-white transition-colors">Archive</a>
-        <a href="#tiers" class="hover:text-white transition-colors">Sponsorship</a>
-        <a href="#contact" class="hover:text-white transition-colors">Bursary & Mentors</a>
+      <!-- Desktop Links (Crisp, Non-Wrapping, Responsive) -->
+      <nav class="hidden lg:flex items-center gap-6 text-[11px] font-semibold uppercase tracking-wider text-zinc-400 shrink-0">
+        <a href="#story" class="whitespace-nowrap hover:text-white transition-colors">Story</a>
+        <a href="#wishlist" class="whitespace-nowrap hover:text-white transition-colors">Hardware Needs</a>
+        <a href="#case-study" class="whitespace-nowrap hover:text-white transition-colors">Why We Won</a>
+        <a href="#archive" class="whitespace-nowrap hover:text-white transition-colors">Archive</a>
+        <a href="#tiers" class="whitespace-nowrap hover:text-white transition-colors">Sponsorship</a>
+        <a href="#contact" class="whitespace-nowrap hover:text-white transition-colors">Mentors</a>
       </nav>
 
-      <!-- Action Button -->
-      <div class="flex items-center gap-2.5">
-        <button onclick="openWhatsAppChat('jude')" class="hidden sm:inline-flex action-btn px-3 py-2 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-semibold text-xs transition-all items-center gap-1.5">
+      <!-- Action Buttons (Zero Wrap, Zero Shrink) -->
+      <div class="flex items-center gap-2 shrink-0 whitespace-nowrap">
+        <button onclick="openWhatsAppChat('jude')" class="hidden sm:inline-flex action-btn px-3 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-semibold text-xs transition-all items-center gap-1.5 whitespace-nowrap">
           <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
           <span>WhatsApp</span>
         </button>
 
-        <button onclick="openPledgeModal()" class="action-btn px-4 py-2 rounded-lg bg-white hover:bg-zinc-200 text-black font-semibold text-xs uppercase tracking-wider transition-all flex items-center gap-1.5">
+        <button onclick="openPledgeModal()" class="action-btn px-3.5 py-1.5 rounded-lg bg-white hover:bg-zinc-200 text-black font-semibold text-xs uppercase tracking-wider transition-all flex items-center gap-1.5 whitespace-nowrap">
           <i data-lucide="handshake" class="w-3.5 h-3.5"></i>
           <span>Sponsor Hardware</span>
         </button>
 
         <!-- Mobile Menu Toggle -->
-        <button id="mobile-menu-btn" class="md:hidden p-1.5 text-zinc-400 hover:text-white" aria-label="Open Navigation">
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-zinc-400 hover:text-white rounded-lg hover:bg-zinc-900 transition-colors" aria-label="Open Navigation">
           <i data-lucide="menu" class="w-5 h-5"></i>
         </button>
       </div>
@@ -119,7 +117,7 @@
     </div>
 
     <!-- Mobile Menu Drawer -->
-    <div id="mobile-menu" class="hidden md:hidden border-b border-zinc-800 bg-[#0c0e15] px-5 py-4 space-y-3 text-xs font-semibold uppercase tracking-wider">
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-zinc-800 bg-[#0c0e15] px-5 py-4 space-y-3 text-xs font-semibold uppercase tracking-wider">
       <a href="#story" class="block text-zinc-300 hover:text-white py-1">Story & Proof</a>
       <a href="#wishlist" class="block text-zinc-300 hover:text-white py-1">Hardware Needs</a>
       <a href="#case-study" class="block text-zinc-300 hover:text-white py-1">Why We Won (Case Study)</a>
@@ -127,6 +125,12 @@
       <a href="#tiers" class="block text-zinc-300 hover:text-white py-1">Sponsorship Packages</a>
       <a href="#governance" class="block text-zinc-300 hover:text-white py-1">School Governance & X</a>
       <a href="#contact" class="block text-amber-400 hover:text-amber-300 py-1">Bursary & Mentors</a>
+      <div class="pt-2 border-t border-zinc-800 flex gap-2">
+        <button onclick="openWhatsAppChat('jude')" class="action-btn w-full py-2 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-semibold flex items-center justify-center gap-1.5">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+          <span>Chat on WhatsApp</span>
+        </button>
+      </div>
     </div>
   </header>
 
